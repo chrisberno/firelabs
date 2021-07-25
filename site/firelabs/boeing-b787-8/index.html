@@ -1,0 +1,83 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>DemoOnly - Aviation - Aircraft - Operations - Boeing - 787 - 8</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="boeing-b787-8"
+                  title="DemoOnly - Aviation - Aircraft - Operations - Boeing - 787 - 8"
+                  environment="web"
+                  feedback-link="https://docs.google.com/document/d/1xziM5JoSWO2CG0b1X1t8_dhjYWdccZ0PDtZqsHQAaOo">
+    
+      <google-codelab-step label="The Boeing B787-8 SeriesOperations &amp; Crew Checklist Manuals Training" duration="11">
+        <p class="image-container"><img style="width: 827.50px" src="img/59a369f4c1c518d.png"></p>
+<pre><code>sudo apt-get update
+sudo apt-get install –y wireshark</code></pre>
+<p>Perform the following tasks, using screenshots that include your OdinID to indicate what you have found.</p>
+<ul>
+<li>Use the <code>ifconfig</code> command to find the IP address and hardware address of the local virtual ethernet card interface.  </li>
+<li>Perform a <code>netstat -rn</code> to find default router&#39;s IP address</li>
+<li>Ping the default router and use <code>arp</code> to find its hardware address</li>
+</ul>
+<p>Launch Wireshark via <code>sudo wireshark</code></p>
+<ul>
+<li>Use a &#34;Capture Filter&#34; to capture <code>icmp</code> (the protocol used by the <code>ping</code> command)</li>
+<li>Select your VMs virtual ethernet interface (e.g. <code>enp0s3</code>), then begin a capture</li>
+<li>In a separate terminal, <code>ping www.google.com</code></li>
+</ul>
+<p>Click on the request packet in the top window of the <code>wireshark</code> UI.  Then, in the middle window, expand the data-link layer packet and click on the source and destination hardware addresses.</p>
+<ul>
+<li>Which hardware manufacturer does the destination hardware address of the packet indicate?</li>
+<li>Show the bytes in the packet dump window as shown below</li>
+</ul>
+<p class="image-container"><img style="width: 624.00px" src="img/f8bbca9f7f72f134.png"></p>
+<p>Repeat using the response packet.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Netsim #2" duration="50">
+        <p class="image-container"><img style="width: 624.00px" src="img/9425cfcbddc6f3b4.png"></p>
+<p>Create an account and complete all levels of Netsim</p>
+<ul>
+<li><a href="https://netsim.erinn.io" target="_blank">https://netsim.erinn.io</a> </li>
+<li>For the Modem level (Level #5), include a screenshot of the packet before it hits modem and a screenshot of the packet after it leaves the modem.</li>
+<li>For the ping and traceroute levels, ensure ICMP is capitalized when specifying the proto field</li>
+<li>For the traceroute level, it is solved in two steps.  The first identifies the hidden routers, the second pings each one.</li>
+</ul>
+<p>Upon completion of all levels</p>
+<ul>
+<li>Show a screenshot of the completed list of levels including your OdinID</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

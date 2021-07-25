@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-07-21T00:43:38Z",
+  "id": "boeing-b787-8",
+  "duration": 61,
+  "title": "DemoOnly - Aviation - Aircraft - Operations - Boeing - 787 - 8",
+  "authors": "Some Pilot",
+  "summary": "A very unofficial operations manual for the Boeing 787 Dreamliner",
+  "source": "1oW8GxEQXIOIdgW_Btnsv-fLpi-ucLS0W9F6gpF0urxI",
+  "theme": "aviation",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "aviation"
+  ],
+  "tags": [
+    "cs430"
+  ],
+  "feedback": "https://docs.google.com/document/d/1xziM5JoSWO2CG0b1X1t8_dhjYWdccZ0PDtZqsHQAaOo",
+  "url": "boeing-b787-8"
+}
